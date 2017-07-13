@@ -9,11 +9,21 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import AVFoundation
 
 class GameViewController: UIViewController {
+    
+    var Soundplayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        do {
+            Soundplayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "pong", ofType: "wav")!))
+        }
+        catch {
+            print(error)
+        }
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'

@@ -17,6 +17,7 @@
 		554863AB1DD1B775002E4F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554863A91DD1B775002E4F6B /* LaunchScreen.storyboard */; };
 		554863B61DD1B776002E4F6B /* PongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554863B51DD1B776002E4F6B /* PongTests.swift */; };
 		554863C11DD1B776002E4F6B /* PongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554863C01DD1B776002E4F6B /* PongUITests.swift */; };
+		55754A021DD3D39200FA802E /* pong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 55754A011DD3D39200FA802E /* pong.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		554863BC1DD1B776002E4F6B /* PongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		554863C01DD1B776002E4F6B /* PongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongUITests.swift; sourceTree = "<group>"; };
 		554863C21DD1B776002E4F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55754A011DD3D39200FA802E /* pong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pong.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				554863A41DD1B775002E4F6B /* Main.storyboard */,
 				554863A71DD1B775002E4F6B /* Assets.xcassets */,
 				554863A91DD1B775002E4F6B /* LaunchScreen.storyboard */,
+				55754A001DD3D37400FA802E /* Sounds */,
 				554863AC1DD1B775002E4F6B /* Info.plist */,
 			);
 			path = Pong;
@@ -132,6 +135,14 @@
 				554863C21DD1B776002E4F6B /* Info.plist */,
 			);
 			path = PongUITests;
+			sourceTree = "<group>";
+		};
+		55754A001DD3D37400FA802E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				55754A011DD3D39200FA802E /* pong.wav */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,11 +208,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Jason Giang";
 				TargetAttributes = {
 					554863961DD1B775002E4F6B = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9729ZJFK7D;
 						ProvisioningStyle = Automatic;
 					};
 					554863B01DD1B776002E4F6B = {
@@ -241,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55754A021DD3D39200FA802E /* pong.wav in Resources */,
 				554863A61DD1B775002E4F6B /* Main.storyboard in Resources */,
 				5548639D1DD1B775002E4F6B /* GameScene.sks in Resources */,
 				554863A81DD1B775002E4F6B /* Assets.xcassets in Resources */,
@@ -345,6 +358,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -395,6 +409,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -424,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9729ZJFK7D;
 				INFOPLIST_FILE = Pong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jvg357.edu.Pong;
@@ -436,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9729ZJFK7D;
 				INFOPLIST_FILE = Pong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jvg357.edu.Pong;
@@ -517,6 +534,7 @@
 				554863C71DD1B776002E4F6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		554863C81DD1B776002E4F6B /* Build configuration list for PBXNativeTarget "PongTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +543,7 @@
 				554863CA1DD1B776002E4F6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		554863CB1DD1B776002E4F6B /* Build configuration list for PBXNativeTarget "PongUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +552,7 @@
 				554863CD1DD1B776002E4F6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
